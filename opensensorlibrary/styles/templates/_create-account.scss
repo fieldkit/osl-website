@@ -1,0 +1,27 @@
+.skin-vector {
+  #mw-createaccount-join {
+    @extend .button;
+    @extend .button--secondary;
+
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+      border-color: currentColor;
+    }
+  }
+
+  #mw-createaccount-cta {
+    width: 100%;
+  }
+
+  .mw-ui-vform {
+    width: 320px;
+  }
+
+  @media screen and (max-width: #{$breakpoint-small - 1px}) {
+    .mw-ui-vform {
+      width: 100%;
+    }
+  }
+}

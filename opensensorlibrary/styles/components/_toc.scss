@@ -1,0 +1,30 @@
+.skin-vector {
+  .toc {
+    background-color: transparent;
+    padding: 12px 14px !important;
+    width: 100%;
+  }
+
+  .toc .toctitle {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .mw-body-content .toc h2 {
+    @extend .heading-4;
+  }
+
+  :not(:checked) > .toctogglespan::before {
+    color: $color-accent;
+  }
+
+  .toctogglelabel,
+  .tocnumber {
+    color: $color-primary-blue;
+  }
+
+  #mw-content-text #toc ul li {
+    margin-bottom: 0.2em;
+    padding-left: 0 !important;
+  }
+}

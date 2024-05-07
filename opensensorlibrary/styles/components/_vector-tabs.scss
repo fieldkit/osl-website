@@ -1,0 +1,83 @@
+.skin-vector {
+  .vectorTabs {
+    background: none;
+    height: auto;
+    padding-left: 0;
+
+    ul {
+      background: none;
+      height: auto;
+    }
+
+    li {
+      background: none;
+      background-image: none;
+
+      height: auto;
+
+      &.selected {
+        background: none;
+      }
+    }
+
+    li a {
+      height: auto;
+      padding: 0;
+    }
+
+    span {
+      background: none;
+      display: block;
+      height: auto;
+    }
+
+    span a {
+      color: inherit;
+      padding: 0 16px;
+    }
+  }
+
+  .vectorTabs li.new a,
+  .vectorTabs li.new a:visited {
+    color: inherit;
+  }
+
+  .vectorTabs li.selected a,
+  .vectorTabs li.selected a:visited {
+    color: inherit;
+  }
+
+  .vectorTabs #ca-unwatch.icon a,
+  .vectorTabs #ca-watch.icon a {
+    padding-top: 20px;
+  }
+
+  .vectorMenu {
+    line-height: 1;
+  }
+
+  #mw-head .vectorMenu h3 {
+    background-image: none;
+    height: auto;
+  }
+
+  .vectorMenu h3 span {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .vectorMenu h3 span::after {
+    top: 0;
+  }
+
+  .vectorMenu .menu {
+    top: 64px;
+  }
+
+  li a {
+    @extend .body;
+    @extend .body--small;
+
+    font-weight: 500;
+  }
+}

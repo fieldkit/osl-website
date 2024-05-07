@@ -1,0 +1,14 @@
+.skin-vector {
+  #mw-content-text .home-module {
+    h4 {
+      font-size: 18px !important;
+      font-weight: bold !important;
+      line-height: 24px !important;
+
+      @include breakpoint("medium") {
+        font-size: 24px !important;
+        line-height: 32px !important;
+      }
+    }
+  }
+}

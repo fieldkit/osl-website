@@ -1,0 +1,11 @@
+.mw-ui-button {
+  @extend .button;
+
+  box-sizing: border-box;
+}
+
+.mw-ui-button.mw-ui-progressive {
+  @extend .button--primary;
+
+  box-sizing: border-box;
+}

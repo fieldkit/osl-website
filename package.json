@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@prettier/plugin-php": "^0.14.2",
+    "autoprefixer": "^9.8.5",
+    "cssnano": "^4.1.10",
+    "husky": "^4.2.5",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-media": "^7.0.8",
+    "prettier": "^2.0.5",
+    "standard-version": "^8.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
+  },
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "build": "node-sass opensensorlibrary/styles/screen.scss opensensorlibrary/screen.css",
+    "commit": "git-cz",
+    "lint": "stylelint \"**/*.scss\"",
+    "postbuild": "postcss opensensorlibrary/screen.css -o opensensorlibrary/screen.css",
+    "release": "standard-version",
+    "watch": "node-sass --watch opensensorlibrary/styles/screen.scss opensensorlibrary/screen.css"
+  },
+  "version": "0.0.0"
+}

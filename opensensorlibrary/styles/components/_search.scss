@@ -1,0 +1,55 @@
+.skin-vector {
+  #p-search form,
+  #p-search input {
+    margin-top: 0;
+  }
+
+  #simpleSearch {
+    background: none;
+    border: 1px solid $color-gray-3;
+    border-radius: 2px;
+    color: inherit;
+    height: auto;
+    margin-top: 0;
+    max-width: 208px;
+    padding-right: 0;
+    transition: border-color $duration-fast;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  #simpleSearch #searchInput {
+    appearance: none;
+    padding: 8px;
+    padding-right: 20px;
+  }
+
+  #simpleSearch input {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+
+  #simpleSearch #searchInput {
+    @extend .body;
+    @extend .body--small;
+
+    line-height: 1;
+  }
+
+  @media screen and (max-width: #{$breakpoint-small - 1px}) {
+    #simpleSearch {
+      margin: 0 auto;
+      max-width: 90%;
+      width: 100%;
+    }
+  }
+}

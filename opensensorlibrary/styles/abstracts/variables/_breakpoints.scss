@@ -1,0 +1,19 @@
+$breakpoint-extra-small: 0px;
+$breakpoint-small: 600px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1280px;
+$breakpoint-extra-large: 1440px;
+
+$breakpoints: (
+  "extra-small": $breakpoint-extra-small,
+  "small": $breakpoint-small,
+  "medium": $breakpoint-medium,
+  "large": $breakpoint-large,
+  "extra-large": $breakpoint-extra-large,
+);
+
+@custom-media --extra-small-viewport (min-width: 0px);
+@custom-media --small-viewport (min-width: 600px);
+@custom-media --medium-viewport (min-width: 1024px);
+@custom-media --large-viewport (min-width: 1280px);
+@custom-media --extra-large-viewport (min-width: 1440px);

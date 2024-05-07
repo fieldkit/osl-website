@@ -1,0 +1,21 @@
+.skin-vector {
+  @media screen and (min-width: $breakpoint-small) {
+    #p-logo {
+      border-bottom: 1px solid $color-gray-3;
+      box-sizing: border-box;
+      height: 64px;
+      margin-top: 52px;
+      padding: 16px 32px;
+      width: 100%;
+
+      a {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .mw-wiki-logo {
+    background-size: contain;
+  }
+}

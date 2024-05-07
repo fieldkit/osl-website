@@ -1,0 +1,50 @@
+.skin-vector {
+  .mw-body .firstHeading {
+    @extend .heading-3;
+
+    color: inherit;
+  }
+
+  #mw-content-text {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-primary-dark-blue;
+      margin-top: 1em;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    h2 {
+      @extend .heading-4;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      @extend .heading-6;
+    }
+
+    #toc {
+      margin-top: 2em;
+      padding: 5px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    #toc ul li {
+      padding-left: 16px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

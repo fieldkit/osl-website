@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  mariadb:
+    container_name: osl-mariadb
+    environment:
+      - MYSQL_DATABASE=mediawiki
+      - MYSQL_PASSWORD=mediawiki
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_USER=mediawiki
+    image: mariadb:10.5
+    restart: always
+    volumes:
+      - mariadb_data:/var/lib/mysql:delegated
+  mediawiki:
+    container_name: osl-mediawiki
+    image: mediawiki:1.33.0
+    links:
+      - mariadb
+    ports:
+      - 8080:80
+    restart: always
+    volumes:
+      - ./mediawiki/LocalSettings.php:/var/www/html/LocalSettings.php:delegated,ro
+      - ./mediawiki/images:/var/www/html/images:delegated
+      - ./opensensorlibrary:/var/www/html/customizations/opensensorlibrary:cached
+      - ./vendor/wikimedia/mobilefrontend:/var/www/html/extensions/MobileFrontend:cached
+volumes:
+  mariadb_data:

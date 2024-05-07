@@ -1,0 +1,22 @@
+{
+  "config": {
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "package": {
+        "name": "wikimedia/mobilefrontend",
+        "source": {
+          "reference": "REL1_33",
+          "type": "git",
+          "url": "https://github.com/wikimedia/mediawiki-extensions-MobileFrontend.git"
+        },
+        "version": "2.3.0"
+      },
+      "type": "package"
+    }
+  ],
+  "require": {
+    "wikimedia/mobilefrontend": "2.3.0"
+  }
+}

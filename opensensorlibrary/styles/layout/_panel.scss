@@ -1,0 +1,92 @@
+.skin-vector {
+  @media screen and (min-width: $breakpoint-small) {
+    #mw-panel {
+      background-color: $color-gray-2;
+      height: 100%;
+      padding-left: 0;
+      width: 280px;
+    }
+
+    #mw-panel .portal {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 32px;
+    }
+
+    #mw-panel #p-logo + .portal {
+      margin-top: 32px;
+    }
+
+    #mw-panel #p-logo + .portal .body {
+      margin-left: 0;
+    }
+
+    #mw-panel .portal .body ul {
+      padding: 0;
+    }
+
+    #mw-panel .portal .body li {
+      margin-top: 8px;
+      padding: 0;
+      padding-left: (8px + 16px);
+      position: relative;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &::before {
+        background-color: currentColor;
+        content: "";
+        display: block;
+        height: 8px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+      }
+
+      a {
+        color: inherit;
+
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  #mw-panel .portal {
+    margin: 0 0.6em 0 0.5em;
+  }
+
+  #mw-panel .portal .body {
+    background: none;
+    margin-left: 0;
+  }
+
+  #mw-panel .portal h3 {
+    @extend .heading-5;
+
+    font-weight: bold;
+    margin: 44px 0 12px;
+    padding: 0;
+  }
+
+  #mw-panel .portal .body li {
+    @extend .body;
+
+    font-weight: bold;
+  }
+  @media screen and (max-width: #{$breakpoint-small - 1px}) {
+    #mw-panel .portal .body li a,
+    #mw-panel .portal .body li a:visited {
+      color: $color-accent;
+    }
+
+    #mw-panel #p-logo + .portal .body {
+      margin-left: 0;
+    }
+  }
+}

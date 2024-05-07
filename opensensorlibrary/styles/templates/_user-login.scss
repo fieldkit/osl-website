@@ -1,0 +1,21 @@
+.skin-vector {
+  .page-Special_UserLogin {
+    h1 {
+      color: $color-primary-dark-blue;
+    }
+  }
+
+  #mw-createaccount-cta {
+    background: none;
+    color: $color-primary-dark-blue;
+    padding-top: 16px;
+    text-align: center;
+  }
+
+  .mw-htmlform-field-HTMLInfoField {
+    a {
+      @extend .link;
+      @extend .link--small;
+    }
+  }
+}

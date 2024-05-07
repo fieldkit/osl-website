@@ -1,0 +1,29 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4258912970339b93de2f3063630c9e48",
+    "packages": [
+        {
+            "name": "wikimedia/mobilefrontend",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/mediawiki-extensions-MobileFrontend.git",
+                "reference": "REL1_33"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
